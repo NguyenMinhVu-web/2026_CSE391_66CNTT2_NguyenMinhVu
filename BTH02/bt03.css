@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Courier New', monospace;
+    background:#efefef;
+}
+
+/* ===== KHUNG CHÍNH ===== */
+
+.container{
+    width:65%;
+    max-width:1000px;
+    margin:40px auto;
+    padding:50px;
+    background:#f7f7f7;
+
+    border-left:5px solid #8ed6ff;
+    border-right:5px solid #8ed6ff;
+    border-bottom:5px solid #8ed6ff;
+}
+
+/* ===== TIÊU ĐỀ ===== */
+
+.main-title{
+    text-align:center;
+    font-size:28px;
+    font-weight:normal;
+    line-height:1.4;
+    margin-bottom:50px;
+}
+
+/* ===== CHIA 2 CỘT ===== */
+
+.content{
+    display:flex;
+    gap:50px;
+}
+
+/* ===== CARD TRÁI ===== */
+
+.card{
+    width:35%;
+    background:#ffffff;
+    padding:25px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.12);
+}
+
+.card h3{
+    font-size:18px;
+    margin-bottom:20px;
+}
+
+.card p{
+    font-size:14px;
+    line-height:1.7;
+    color:#666;
+    margin-bottom:20px;
+}
+
+.author strong{
+    font-size:14px;
+}
+
+.role{
+    display:block;
+    font-size:12px;
+    margin-top:3px;
+    color:#2e86de;
+}
+
+/* ===== TEXT PHẢI ===== */
+
+.text{
+    width:65%;
+}
+
+.text p{
+    font-size:15px;
+    line-height:1.8;
+    margin-bottom:25px;
+    color:#444;
+}
+
+.text .bold{
+    font-weight:bold;
+}
