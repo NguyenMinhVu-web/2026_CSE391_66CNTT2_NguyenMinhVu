@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bài 5 - Events</title>
+</head>
+<body>
+
+<form id="form">
+<input type="text" placeholder="Nhập tên">
+<button type="submit">Submit</button>
+</form>
+
+<ul id="list">
+<li>Item A</li>
+<li>Item B</li>
+<li>Item C</li>
+</ul>
+
+<script>
+
+document.getElementById("form").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Form đã submit!");
+
+});
+
+document.addEventListener("keydown",function(e){
+
+console.log("Bạn nhấn:",e.key);
+
+});
+
+document.getElementById("list").addEventListener("click",function(e){
+
+if(e.target.tagName==="LI"){
+alert("Bạn click: "+e.target.textContent);
+}
+
+});
+
+</script>
+
+</body>
+</html>

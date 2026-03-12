@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bài 4 - Event Listeners</title>
+</head>
+<body>
+
+<button id="btn">Click me</button>
+
+<script>
+
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", function(){
+btn.textContent = "Đã click!";
+});
+
+btn.addEventListener("mouseenter", function(){
+btn.style.background = "yellow";
+});
+
+btn.addEventListener("mouseleave", function(){
+btn.style.background = "";
+});
+
+</script>
+
+</body>
+</html>

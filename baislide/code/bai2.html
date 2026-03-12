@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bài 2 - Modifying Elements</title>
+</head>
+<body>
+
+<h1 id="title">Tiêu đề cũ</h1>
+
+<div id="box"></div>
+
+<ul id="list">
+<li>Item 1</li>
+</ul>
+
+<script>
+
+document.getElementById("title").textContent = "Tiêu đề mới";
+
+document.getElementById("box").innerHTML = "<p>Đây là đoạn văn mới</p>";
+
+const newItem = document.createElement("li");
+newItem.textContent = "Item 2";
+
+document.getElementById("list").append(newItem);
+
+setTimeout(()=>{
+newItem.remove();
+},3000);
+
+</script>
+
+</body>
+</html>

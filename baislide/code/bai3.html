@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bài 3 - Attributes</title>
+
+<style>
+
+.active{
+background: yellow;
+}
+
+</style>
+
+</head>
+<body>
+
+<img id="photo" src="https://via.placeholder.com/150">
+
+<div id="box">Box</div>
+
+<button id="toggleBtn">Toggle class</button>
+
+<script>
+
+const img = document.getElementById("photo");
+
+img.src = "https://via.placeholder.com/200";
+
+const box = document.getElementById("box");
+
+box.classList.add("active");
+
+console.log(box.classList.contains("active"));
+
+document.getElementById("toggleBtn").onclick = function(){
+box.classList.toggle("active");
+};
+
+</script>
+
+</body>
+</html>

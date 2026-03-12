@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bài 6 - Promises</title>
+</head>
+<body>
+
+<h2>Kết quả Promise</h2>
+<p id="result">Đang tải dữ liệu...</p>
+
+<script>
+
+function getData(){
+return new Promise(function(resolve,reject){
+
+setTimeout(function(){
+resolve("Lấy dữ liệu thành công!");
+},2000);
+
+});
+}
+
+getData()
+.then(function(data){
+
+document.getElementById("result").textContent = data;
+
+return "Bước tiếp theo";
+
+})
+.then(function(result){
+
+console.log(result);
+
+})
+.catch(function(error){
+
+console.log(error);
+
+});
+
+</script>
+
+</body>
+</html>

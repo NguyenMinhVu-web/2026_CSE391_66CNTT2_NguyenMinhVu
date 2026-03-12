@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bài 1 - Selecting Elements</title>
+</head>
+<body>
+
+<h1 id="title">Hello DOM</h1>
+
+<p class="text">Đoạn văn 1</p>
+<p class="text">Đoạn văn 2</p>
+
+<button id="btn">Click</button>
+
+<script>
+
+const title = document.getElementById("title");
+console.log("getElementById:", title);
+
+const firstText = document.querySelector(".text");
+console.log("querySelector:", firstText);
+
+const allText = document.querySelectorAll(".text");
+console.log("querySelectorAll:", allText);
+
+</script>
+
+</body>
+</html>
