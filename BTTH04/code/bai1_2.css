@@ -1,0 +1,21 @@
+body{
+font-family:Arial;
+margin:40px;
+}
+
+table{
+border-collapse: collapse;
+width:400px;
+margin-top:20px;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:8px;
+text-align:center;
+}
+
+th{
+cursor:pointer;
+background:#eee;
+}
