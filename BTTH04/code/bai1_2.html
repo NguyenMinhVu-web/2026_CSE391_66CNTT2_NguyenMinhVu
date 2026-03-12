@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tìm kiếm sinh viên</title>
+<link rel="stylesheet" href="bai1_2.css">
+</head>
+
+<body>
+
+<h2>Danh sách sinh viên</h2>
+
+<input id="search" placeholder="Tìm theo tên">
+
+<select id="filter">
+<option value="all">Tất cả</option>
+<option value="Giỏi">Giỏi</option>
+<option value="Khá">Khá</option>
+<option value="Trung bình">Trung bình</option>
+<option value="Yếu">Yếu</option>
+</select>
+
+<table>
+<thead>
+<tr>
+<th>Họ tên</th>
+<th id="sortScore">Điểm</th>
+<th>Xếp loại</th>
+</tr>
+</thead>
+
+<tbody id="tableBody"></tbody>
+</table>
+
+<script src="bai1_2.js"></script>
+
+</body>
+</html>
